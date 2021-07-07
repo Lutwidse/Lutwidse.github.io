@@ -63,6 +63,12 @@ $ hugo new site blog (自分が分かりやすいものでOK) $ cd blog $ git in
       
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
+             <br> 
+          
+          <a class="app-header-menu-item" href="/categories">記事一覧(カテゴリ)</a>
+             <br> 
+          
+          <a class="app-header-menu-item" href="/tags">記事一覧(タグ)</a>
       </nav>
       <p>メモ帳として使う予定</p>
       <div class="app-header-social">
@@ -105,6 +111,14 @@ $ hugo new site blog (自分が分かりやすいものでOK) $ cd blog $ git in
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
           2 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://lutwidse.github.io/tags/hugo/">Hugo</a>
+              <a class="tag" href="https://lutwidse.github.io/tags/github/">GitHub</a>
         </div>
       </div>
     </header>
@@ -186,7 +200,7 @@ $ git submodule add https://github.com/Lutwidse/hugo-theme-m10c themes/m10c
     <span style="color:#75715e"># scssを編集したため追記。後ほど記載。</span>
     <span style="color:#a6e22e">textColor</span> = <span style="color:#e6db74">&#34;#fffff0&#34;</span>
 </code></pre></div><p>では、サーバーを立ち上げてみましょう。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">$ hugo server -dW
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">$ hugo server -d
 </code></pre></div><p>ブラウザで<a href="http://127.0.0.1:1313">127.0.0.1:1313</a>に接続するとサイトが表示されます。<br>
 されない場合はエラーログと丸太を持って筆者の Twitter アカウントに DM で突撃してください。</p>
 <p>そしたら今度は記事を生成してみます。</p>
