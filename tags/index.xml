@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 07 Jul 2021 13:58:40 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XSS</title>
+      <link>https://lutwidse.github.io/tags/xss/</link>
+      <pubDate>Wed, 28 Jul 2021 18:11:51 +0900</pubDate>
+      
+      <guid>https://lutwidse.github.io/tags/xss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>脆弱性</title>
+      <link>https://lutwidse.github.io/tags/%E8%84%86%E5%BC%B1%E6%80%A7/</link>
+      <pubDate>Wed, 28 Jul 2021 18:11:51 +0900</pubDate>
+      
+      <guid>https://lutwidse.github.io/tags/%E8%84%86%E5%BC%B1%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GitHub</title>
       <link>https://lutwidse.github.io/tags/github/</link>

