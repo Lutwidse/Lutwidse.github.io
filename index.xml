@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>水の飲み方を忘れないための備忘録</title>
-    <link>https://lutwidse.github.io/</link>
+    <link>https://blog.m0n4.com/</link>
     <description>Recent content on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://blog.m0n4.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fuze.tvに脆弱性を見つけた話</title>
-      <link>https://lutwidse.github.io/post/fuze.tv-high-impact-xss/</link>
+      <link>https://blog.m0n4.com/post/fuze.tv-high-impact-xss/</link>
       <pubDate>Wed, 28 Jul 2021 18:11:51 +0900</pubDate>
       
-      <guid>https://lutwidse.github.io/post/fuze.tv-high-impact-xss/</guid>
+      <guid>https://blog.m0n4.com/post/fuze.tv-high-impact-xss/</guid>
       <description>TL;DR Fuze.tv のコメントに蓄積型 XSS を投稿することが可能であり、
 下記の方法から Fuze.tv を利用する約 55 万人1すべてのユーザーに影響を及ぼすことが可能だった。
 またJWT の実装不備もあり、結果的に完全なサービス妨害に繋げることができた。
@@ -28,10 +28,10 @@ Fuze.tv とは ゲームのクリップを共有するサイト。
     
     <item>
       <title>HugoとGitHub Pagesでブログを作成した話</title>
-      <link>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</link>
+      <link>https://blog.m0n4.com/post/2021-07-07-create-blog-with-hugo/</link>
       <pubDate>Wed, 07 Jul 2021 13:58:40 +0900</pubDate>
       
-      <guid>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</guid>
+      <guid>https://blog.m0n4.com/post/2021-07-07-create-blog-with-hugo/</guid>
       <description>Q. Web 系の知識なしでブログを作るには WordPress ってなに！！！助けて！！
 不安にかられているそこの貴方
 そんな非 Web 系エンジニアでも

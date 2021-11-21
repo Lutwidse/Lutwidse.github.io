@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on 水の飲み方を忘れないための備忘録</title>
-    <link>https://lutwidse.github.io/tags/hugo/</link>
+    <link>https://blog.m0n4.com/tags/hugo/</link>
     <description>Recent content in Hugo on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 07 Jul 2021 13:58:40 +0900</lastBuildDate><atom:link href="https://lutwidse.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 13:58:40 +0900</lastBuildDate><atom:link href="https://blog.m0n4.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HugoとGitHub Pagesでブログを作成した話</title>
-      <link>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</link>
+      <link>https://blog.m0n4.com/post/2021-07-07-create-blog-with-hugo/</link>
       <pubDate>Wed, 07 Jul 2021 13:58:40 +0900</pubDate>
       
-      <guid>https://lutwidse.github.io/post/2021-07-07-create-blog-with-hugo/</guid>
+      <guid>https://blog.m0n4.com/post/2021-07-07-create-blog-with-hugo/</guid>
       <description>Q. Web 系の知識なしでブログを作るには WordPress ってなに！！！助けて！！
 不安にかられているそこの貴方
 そんな非 Web 系エンジニアでも
