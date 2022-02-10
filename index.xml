@@ -6,7 +6,23 @@
     <description>Recent content on 水の飲み方を忘れないための備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 28 Jul 2021 18:11:51 +0900</lastBuildDate><atom:link href="https://blog.m0n4.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Feb 2022 20:38:45 +0900</lastBuildDate><atom:link href="https://blog.m0n4.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hopperで特定のアプリケーションをデバッグできなかった話</title>
+      <link>https://blog.m0n4.com/post/hopper-undebugable-application/</link>
+      <pubDate>Thu, 10 Feb 2022 20:38:45 +0900</pubDate>
+      
+      <guid>https://blog.m0n4.com/post/hopper-undebugable-application/</guid>
+      <description>前置き あ、どうも暇人です。最近はWordleがアツいですね、世界大会出場を目指していきたいと思います。
+さて、長らくマルウェアの解析等にIDA無料版やGhidraを使ってきたのですが、今回はMacBook Proを購入したということもあり、
+どうせならと以前から気になっていたHopperappを使ってみることにしました。
+原因不明…ってコト！？ しばらく使っているうちに、デバッガーがエントリーポイントを読み込んだ直後に停止してしまう問題に直面しました。
+類似したケースも見つからずに困っていたところ、IDAの記事にそれらしきものが書かれていたので試してみることに。
+ Despite the fact that mac_server64 is codesigned, it still failed to retrieve permission from the OS to debug the target app.
+This is because Calculator.app and all other apps in /System/Applications/ are protected by System Integrity Protection and they cannot be debugged until SIP is disabled.
+Note that the error message is a bit misleading because it implies that running mac_server64 as root will resolve the issue - it will not.</description>
+    </item>
+    
     <item>
       <title>Fuze.tvに脆弱性を見つけた話</title>
       <link>https://blog.m0n4.com/post/fuze.tv-high-impact-xss/</link>
